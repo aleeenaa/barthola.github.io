@@ -1,0 +1,24 @@
+* {
+    border: solid black 1px;
+    padding: 2px;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+.nav, .fNav {
+    list-style: none;
+    display: inline-flex;
+    overflow: auto;
+}
+
+#footerNav, #navBar {
+    overflow: auto;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.pull-right {
+    float: right !important;
+}
