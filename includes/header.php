@@ -45,14 +45,19 @@ if(isset($page)) { ?>
         <meta name="description" content="Aleena Naeem's Portfolio">
         <meta name="author" content="Aleena Naeem">
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0">
-<!--        <link rel="icon" type="image/ico" href="/Portfolio/favicon.ico"/>-->
-<!--        <link rel="apple-touch-icon" href="/Portfolio/favicon.ico"/>-->
+        <link rel="icon" type="image/ico" href="/Portfolio/favicon.ico"/>
+        <link rel="apple-touch-icon" href="/Portfolio/favicon.ico"/>
         <link rel="stylesheet" type="text/css" href="/Portfolio/css/stylesheet.css"/>
 
         <title><?php echo $title ?></title>
     </head>
 
     <body>
+    <header class="banner">
+        <h1>Hello all &amp; Welcome!</h1>
+        <h2>I'm Aleena and this my portfolio.</h2>
+    </header>
+
 
     <?php
 

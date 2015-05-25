@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-293 -103 1000 1000" enable-background="new -293 -103 1000 1000" xml:space="preserve">
+<g>
+	<defs>
+		<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="25.6" y="181.6" width="362.7" height="411.4">
+			
+				<feColorMatrix  type="matrix" values="-1 0 0 0 1  0 -1 0 0 1  0 0 -1 0 1  0 0 0 1 0" color-interpolation-filters="sRGB" result="source"/>
+			<feFlood  style="flood-color:white;flood-opacity:1" result="back"/>
+			<feBlend  in="source" in2="back" mode="normal"/>
+		</filter>
+	</defs>
+	<mask maskUnits="userSpaceOnUse" x="25.6" y="181.6" width="362.7" height="411.4" id="SVGID_1_">
+		<g filter="url(#Adobe_OpacityMaskFilter)">
+			<polygon fill="#FFFFFF" points="312.5,349.7 147,349.7 142.9,303.2 210.1,303.2 316.5,303.2 320.7,257.8 207.1,257.8 207,257.8 
+				93.3,257.8 94.4,269.9 105.5,395.1 262.9,395.1 257.6,454 207.1,467.6 157.3,454.3 153.1,417.8 107.5,417.8 113.9,489.1 
+				207.1,514.9 300.1,489.1 			"/>
+		</g>
+	</mask>
+	<g mask="url(#SVGID_1_)">
+		<polygon fill="#999999" points="58.6,551.9 25.6,181.6 388.4,181.6 355.3,551.8 206.8,593 		"/>
+	</g>
+	<defs>
+		<filter id="Adobe_OpacityMaskFilter_1_" filterUnits="userSpaceOnUse" x="-108.1" y="38" width="630.1" height="658">
+			
+				<feColorMatrix  type="matrix" values="-1 0 0 0 1  0 -1 0 0 1  0 0 -1 0 1  0 0 0 1 0" color-interpolation-filters="sRGB" result="source"/>
+			<feFlood  style="flood-color:white;flood-opacity:1" result="back"/>
+			<feBlend  in="source" in2="back" mode="normal"/>
+		</filter>
+	</defs>
+	<mask maskUnits="userSpaceOnUse" x="-108.1" y="38" width="630.1" height="658" id="SVGID_2_">
+		<g filter="url(#Adobe_OpacityMaskFilter_1_)">
+		</g>
+	</mask>
+	<g mask="url(#SVGID_2_)">
+		<path fill="#999999" d="M207,688.5c-82.2,0-159.4-33.4-217.5-94.2c-58.1-60.7-90.1-141.5-90.1-227.3c0-85.9,32-166.6,90.1-227.3
+			C47.6,78.9,124.8,45.5,207,45.5c82.2,0,159.4,33.4,217.5,94.2c58.1,60.7,90.1,141.5,90.1,227.3c0,85.9-32,166.6-90.1,227.3
+			C366.4,655.1,289.2,688.5,207,688.5z M207,46.5c-81.9,0-158.9,33.3-216.8,93.9c-57.9,60.5-89.8,141-89.8,226.6
+			c0,85.6,31.9,166.1,89.8,226.6c57.9,60.5,134.9,93.9,216.8,93.9c81.9,0,158.9-33.3,216.8-93.9c57.9-60.5,89.8-141,89.8-226.6
+			c0-85.6-31.9-166.1-89.8-226.6C365.9,79.8,288.9,46.5,207,46.5z"/>
+		<path fill="#999999" d="M207,696c-84.2,0-163.4-34.3-222.9-96.5c-59.4-62.1-92.2-144.7-92.2-232.5s32.7-170.4,92.2-232.5
+			C43.6,72.3,122.8,38,207,38c84.2,0,163.4,34.3,222.9,96.5c59.4,62.1,92.2,144.7,92.2,232.5c0,87.8-32.7,170.4-92.2,232.5
+			C370.4,661.7,291.2,696,207,696z M207,54C127.2,54,52.1,86.5-4.3,145.5C-60.9,204.7-92.1,283.3-92.1,367
+			c0,83.7,31.2,162.3,87.7,221.5C52.1,647.5,127.2,680,207,680s154.9-32.5,211.3-91.6c56.6-59.1,87.7-137.8,87.7-221.5
+			s-31.2-162.3-87.7-221.5C361.9,86.5,286.8,54,207,54z"/>
+	</g>
+</g>
+</svg>

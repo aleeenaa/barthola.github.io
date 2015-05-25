@@ -1,13 +1,13 @@
 
 <nav id="navBar">
     <ul class="nav pull-left">
-        <li>Home</li>
-        <li>Profile</li>
-        <li>Curriculum Vitae</li>
-        <li>Specialty and Scopes</li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Curriculum Vitae</a></li>
+        <li><a href="#">Specialty and Scopes</a></li>
     </ul>
     <ul class="nav pull-right">
-        <li href="uk.linkedin.com/in/aleenaeem/" alt="Aleena Naeem's LinkedIn Profile">LinkedIn</li>
-        <li href="github.com/barthola" alt="Aleena Naeem's GitHub Profile">GitHub</li>
+        <li><a href="http://uk.linkedin.com/in/aleenaeem/" alt="Aleena Naeem's LinkedIn Profile">LinkedIn</a></li>
+        <li><a href="http://github.com/barthola" alt="Aleena Naeem's GitHub Profile">GitHub</a></li>
     </ul>
 </nav>
