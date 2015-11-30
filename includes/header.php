@@ -45,9 +45,11 @@ if(isset($page)) { ?>
         <meta name="description" content="Aleena Naeem's Portfolio">
         <meta name="author" content="Aleena Naeem">
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0">
-        <link rel="icon" type="image/ico" href="/Portfolio/favicon.ico"/>
-        <link rel="apple-touch-icon" href="/Portfolio/favicon.ico"/>
-        <link rel="stylesheet" type="text/css" href="/Portfolio/css/stylesheet.css"/>
+        <link rel="icon" type="image/ico" href="/favicon.ico"/>
+        <link rel="apple-touch-icon" href="/favicon.ico"/>
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
+<!--        <script type="text/javascript" src="/Portfolio/js/script.js"></script>-->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
         <title><?php echo $title ?></title>
     </head>
