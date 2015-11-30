@@ -48,6 +48,8 @@ if(isset($page)) { ?>
         <link rel="icon" type="image/ico" href="/Portfolio/favicon.ico"/>
         <link rel="apple-touch-icon" href="/Portfolio/favicon.ico"/>
         <link rel="stylesheet" type="text/css" href="/Portfolio/css/stylesheet.css"/>
+<!--        <script type="text/javascript" src="/Portfolio/js/script.js"></script>-->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
         <title><?php echo $title ?></title>
     </head>

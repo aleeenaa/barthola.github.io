@@ -14,7 +14,7 @@ body {
     font-family: "Shift", sans-serif;
     margin: 0;
     font-size: 15px;
-    /*background-color: lightgrey;*/
+    background: #F0F2F1 none repeat scroll 0% 0%;
 }
 
 header::before {
@@ -87,26 +87,25 @@ nav, footer {
     list-style: none;
     display: inline-flex;
     overflow: auto;
-    border: solid black 1px;
     padding: 2px;
-    margin: 5px;
+    margin: 5px 0;
 }
 
 .nav li {
     display: inline-flex;
-    border: solid black 1px;
     padding: 2px;
-    margin: 5px;
 }
 
 #footerNav, #navBar {
     overflow: auto;
-    border: solid black 1px;
     padding: 2px;
-    margin: 5px;
+    margin: 10px 8px;
+    border-radius: 1px;
+    background: #ffffff none repeat scroll 0% 0%;
 }
 
 nav a, footer a {
+    cursor: pointer;
     color: #5a5a5a;
     font-size: 12px;
     font-weight: bold;
@@ -115,13 +114,22 @@ nav a, footer a {
     text-decoration: none;
 }
 
+a :link, a :visited {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a :hover, a :active {
+    color: #75A8D4;
+}
+
 .banner {
-    color: white;
+    color: #ffffff;
     text-align: left;
 }
 
 .banner h1 {
-    color: #fff;
+    color: #ffffff;
     font-family: /*"Shift",*/ Calibri, serif;
     font-size: 44px;
     font-weight: bold;
@@ -130,17 +138,40 @@ nav a, footer a {
 }
 
 .banner h2 {
-    color: #fff;
+    color: #ffffff;
     font-size: 20px;
     font-weight: lighter;
     margin: 0 35px 10px;
 }
 
-#resourceLinks {
-    margin: 0 20%;
+#sitemap {
+    left: 0;
+    margin: 10px auto;
 }
 
-.zen-validate-html {
+#admin {
+    margin: 10px auto;
+    right: 0;
+}
+
+#resourceLinks {
+    /*margin: 0 30%;*/
+    /*position:absolute;*/
+    /*width:300px;*/
+    /*height:200px;*/
+    /*z-index:15;*/
+    /*top:50%;*/
+    /*left:50%;*/
+    /*margin:-100px 0 0 -150px;*/
+    width: 444px;
+    height: 76px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 10px auto;
+}
+
+.validate-html {
     width: 76px;
     height: 76px;
     padding: 76px 0 0;
@@ -150,7 +181,7 @@ nav a, footer a {
     transition: color 0.25s ease-out 0s, box-shadow 0.25s ease-out 0s;
 }
 
-.zen-validate-html:hover {
+.validate-html:hover {
     width: 76px;
     height: 76px;
     padding: 76px 0 0;
@@ -159,7 +190,7 @@ nav a, footer a {
     background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMTE4LjMgMTY2LjMgMzc1LjQgMzkyLjQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMTE4LjMgMTY2LjMgMzc1LjQgMzkyLjQiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0yMTUuMiA0NzUuN2w5MC43IDI1LjJsOTAuOS0yNS4yTDQxNyAyNDkuMUgxOTVMMjE1LjIgNDc1Ljd6IE0zMDYgMjk1LjdMMzA2IDI5NS43aDY5LjZsLTIuNiAyNy44aC02NS4xIGgtNDEuMWwyLjUgMjguNWgxMDEuM2wtNy42IDg1LjNMMzA2LjEgNDUzbC01Ny0xNS44bC0zLjktNDMuNkgyNzNsMi42IDIyLjNsMzAuNSA4LjFsMzAuOS04LjNsMy4yLTM2aC05Ni4zbC02LjgtNzYuNmwtMC43LTcuNCBIMzA2eiIvPjxwYXRoIGZpbGw9IiM5OTk5OTkiIGQ9Ik00MzguNyAyMjMuOGMtMzUuNC0zNy4xLTgyLjYtNTcuNS0xMzIuNy01Ny41cy05Ny4yIDIwLjQtMTMyLjcgNTcuNWMtMzUuNCAzNy01NSA4Ni4zLTU1IDEzOC43IHMxOS41IDEwMS43IDU1IDEzOC43YzM1LjQgMzcgODIuNiA1Ny41IDEzMi43IDU3LjVzOTcuMi0yMC40IDEzMi43LTU3LjVjMzUuNC0zNyA1NS04Ni4zIDU1LTEzOC43UzQ3NC4xIDI2MC45IDQzOC43IDIyMy44eiBNMzk2LjggNDc1LjZsLTkwLjkgMjUuMmwtOTAuNy0yNS4yTDE5NSAyNDkuMWgyMjJMMzk2LjggNDc1LjZ6Ii8+PHBvbHlnb24gZmlsbD0iIzk5OTk5OSIgcG9pbnRzPSIyNDMuOSwzNzkuNyAzNDAuMiwzNzkuNyAzMzcsNDE1LjggMzA2LjEsNDI0LjEgMjc1LjYsNDE2IDI3MywzOTMuNiAyNDUuMSwzOTMuNiAyNDksNDM3LjIgMzA2LjEsNDUzIDM2Myw0MzcuMiAzNzAuNiwzNTEuOSAyNjkuMywzNTEuOSAyNjYuOCwzMjMuNSAzMDcuOSwzMjMuNSAzNzMsMzIzLjUgMzc1LjYsMjk1LjcgMzA2LjEsMjk1LjcgMzA2LDI5NS43IDIzNi40LDI5NS43IDIzNy4xLDMwMy4xIi8+PC9nPjwvc3ZnPg==) no-repeat, center, center;
 }
 
-.zen-validate-css {
+.validate-css {
     width: 76px;
     height: 76px;
     padding: 76px 0 0;
@@ -169,7 +200,7 @@ nav a, footer a {
     transition: color 0.25s ease-out 0s, box-shadow 0.25s ease-out 0s;
 }
 
-.zen-validate-css:hover {
+.validate-css:hover {
     width: 76px;
     height: 76px;
     padding: 76px 0 0;
@@ -178,7 +209,7 @@ nav a, footer a {
     background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDM4NS43IDQwMi43IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAzODUuNyA0MDIuNyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZmlsbD0iIzk5OTk5OSIgZD0iTTE5Mi44IDBDODYuMyAwIDAgOTAuMSAwIDIwMS4zczg2LjMgMjAxLjMgMTkyLjggMjAxLjNzMTkyLjgtOTAuMSAxOTIuOC0yMDEuM1MyOTkuMyAwIDE5Mi44IDB6IE0yNzguNCAyODUuMmwtMTA4LjUgMzYuM2wtOTYuMi0zNi4zbDkuMS00OS42SDEyNWwtMy4yIDIwLjFsNTUuNSAyMi4xbDY3LTIyLjFsOC00Ni4ySDg4LjFsNy40LTQwLjJoMTY1LjVsNC0yNS41SDEwMC44bDgtNDAuNSBoMjA1LjdMMjc4LjQgMjg1LjJ6Ii8+PC9zdmc+) no-repeat, center, center;
 }
 
-.zen-github {
+.github {
     width: 76px;
     height: 76px;
     padding: 76px 0 0;
@@ -187,7 +218,7 @@ nav a, footer a {
     background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMTk0IC0xMDQgMTAwMCAxMDAwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDE5NCAtMTA0IDEwMDAgMTAwMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZmlsbD0iIzk5OTk5OSIgZD0iTTM4OS4zIDUwMy40Yy0yLjYtMi42LTIuNi01LjIgMC03LjhjNS4yLTUuMiAxMS43LTcuMiAxOS41LTUuOXMxMi40IDIuNiAxMy43IDMuOSBjOS4xIDMuOSAxOS4yIDEyLjcgMzAuMyAyNi40YzExLjEgMTMuNyAxOS45IDIzLjEgMjYuNCAyOC4zYzMxLjIgMjYgNjMuMSAyOCA5NS43IDUuOWMyLjYtOS4xIDYuOC0xNi45IDEyLjctMjMuNCBjNS45LTYuNSAxMS40LTExLjEgMTYuNi0xMy43YzUuMi0yLjYgMTQuMy02LjUgMjcuMy0xMS43Yy00My0zLjktNzcuOC0xMS40LTEwNC41LTIyLjVjLTI2LjctMTEuMS00Ny44LTI1LjEtNjMuNS00MiBjLTIwLjgtMjMuNC0zMy41LTU0LTM4LjEtOTEuOGMtNC42LTM3LjgtMS42LTcyLjMgOC44LTEwMy41YzcuOC0xOS41IDE4LjktMzcuMSAzMy4yLTUyLjdjLTEwLjQtMzIuNi04LjUtNjkuNyA1LjktMTExLjMgYzQxLjcgMi42IDc5LjQgMTYuOSAxMTMuMyA0M2M2NS4xLTE2LjkgMTMyLjgtMTcuNiAyMDMuMS0yYzkuMS02LjUgMjMuMS0xNC42IDQyLTI0LjRjMTguOS05LjggNDIuNi0xNS4zIDcxLjMtMTYuNiBjNS4yIDE0LjMgOC44IDMxLjIgMTAuNyA1MC44YzIgMTkuNSAxIDM3LjgtMi45IDU0LjdjMjkuOSAzMS4yIDQ1LjYgNzIuOSA0Ni45IDEyNWMwIDQxLjctNy4yIDc2LjItMjEuNSAxMDMuNSBjLTE0LjMgMjcuMy0zOS43IDUwLjEtNzYuMiA2OC40Yy0yNC43IDExLjctNTcuMyAxOC45LTk3LjcgMjEuNWMxOC4yIDkuMSAzMS42IDE4LjYgNDAgMjguM3MxNCAyNS4xIDE2LjYgNDUuOXY2MS41IGMwIDAgMC43IDE5LjkgMiA1OS42YzMuOSA2LjUgOC41IDEyIDEzLjcgMTYuNmM1LjIgNC42IDkuOCA3LjggMTMuNyA5LjhjMy45IDIgNS4yIDQuOSAzLjkgOC44cy02LjUgNS45LTE1LjYgNS45IGMtMjIuMSAwLTM5LjctNy44LTUyLjctMjMuNGMtMy45LTYuNS01LjktMTQuMy01LjktMjMuNFY2MDFjMC0xMC40LTIuNi0xNy45LTcuOC0yMi41Yy01LjItNC42LTEwLjQtNy41LTE1LjYtOC44djEyMyBjMCAyMi4xIDIuNiAzNi41IDcuOCA0M3M4LjUgMTMgOS44IDE5LjVjMS4zIDEuMyAwLjMgMi4zLTIuOSAyLjljLTMuMyAwLjctOC44LTAuMy0xNi42LTIuOWMtMTYuOS0zLjktMjguNi0xMi43LTM1LjItMjYuNCBjLTYuNS0xMy43LTkuOC0yOC4zLTkuOC00My45VjU2My45aC0yNS40VjY4NWMwIDE1LjYtMy4zIDMwLjYtOS44IDQ0LjljLTkuMSAxOC4yLTI2IDI4LTUwLjggMjkuM2MtMy45LTEuMy01LjktMi42LTUuOS0zLjkgYzEuMy0xLjMgNS4yLTcuOCAxMS43LTE5LjVjMS4zLTIuNiAyLjktNy44IDQuOS0xNS42YzItNy44IDIuOS0xNi45IDIuOS0yNy4zdi0xMjNjLTUuMiAxLjMtMTAuMSA0LjItMTQuNiA4LjggYy00LjYgNC42LTYuOCAxMi02LjggMjIuNXY5My43YzAgOS4xLTIgMTYuOS01LjkgMjMuNGMtMTEuNyAxNS42LTI5LjMgMjMuNC01Mi43IDIzLjRjLTkuMSAwLTE0LjMtMi0xNS42LTUuOWMtMS4zLTIuNi0xLTQuOSAxLTYuOCBzNC45LTQuMiA4LjgtNi44czYuNS00LjYgNy44LTUuOWM1LjItMy45IDkuMS05LjEgMTEuNy0xNS42YzMuOS01LjIgNC45LTE4LjkgMi45LTQxcy0yLjMtMzYuNS0xLTQzIGMtMzMuOSAxMS43LTY4LjQgNS45LTEwMy41LTE3LjZjLTEwLjQtMTAuNC0yMC44LTI1LjQtMzEuMi00NC45QzQyOC40IDUzOS44IDQxMi43IDUyMi45IDM4OS4zIDUwMy40TDM4OS4zIDUwMy40eiIvPjxwYXRoIGZpbGw9IiM5OTk5OTkiIGQ9Ik02OTQgODk2Yy0xMzMuNiAwLTI1OS4zLTUyLjItMzUzLjctMTQ2LjhDMjQ2IDY1NC43IDE5NCA1MjkuMSAxOTQgMzk1LjVzNTEuOS0yNTkuMiAxNDYuMy0zNTMuNyBDNDM0LjctNTIuOCA1NjAuNC0xMDUgNjk0LTEwNXMyNTkuMyA1Mi4yIDM1My43IDE0Ni44QzExNDIgMTM2LjMgMTE5NCAyNjEuOSAxMTk0IDM5NS41cy01MS45IDI1OS4yLTE0Ni4zIDM1My43IEM5NTMuMyA4NDMuOCA4MjcuNiA4OTYgNjk0IDg5NnogTTY5NC04MC43Yy0xMjYuNiAwLTI0NS44IDQ5LjQtMzM1LjMgMTM5LjJjLTg5LjggOTAuMS0xMzkuMyAyMDkuNi0xMzkuMyAzMzdzNDkuNSAyNDYuOSAxMzkuMiAzMzcgYzg5LjcgODkuOCAyMDguOCAxMzkuMiAzMzUuNCAxMzkuMnMyNDUuOC00OS40IDMzNS4zLTEzOS4zYzg5LjgtODkuOSAxMzkuMi0yMDkuNiAxMzkuMi0zMzdzLTQ5LjUtMjQ2LjktMTM5LjItMzM3IEM5MzkuOC0zMS4yIDgyMC42LTgwLjcgNjk0LTgwLjd6Ii8+PC9zdmc+) no-repeat, center, center;
 }
 
-.zen-github:hover {
+.github:hover {
     width: 76px;
     height: 76px;
     padding: 76px 0 0;
@@ -198,22 +229,13 @@ nav a, footer a {
 }
 
 #footerNav {
-    height: 150px;
+    height: 100px;
 }
 
 .fCell {
     display: inline-flex;
     vertical-align: middle;
     horiz-align: center;
-}
-
-a :link, a :visited {
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a :hover, a :active {
-    color: #75A8D4;
 }
 
 .pull-left {
